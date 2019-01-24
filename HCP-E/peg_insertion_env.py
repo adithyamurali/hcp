@@ -43,7 +43,7 @@ class PegInsertionEnv(BaseEnv):
         self.sim.data.ctrl[:self.act_dim] = scaled_action
         self.sim.step()
         ob = self.get_obs()
-        peg_target = self.sim.data.get_site_xpos('peg_target'),
+        peg_target = self.sim.data.get_site_xpos('target'),
         reward, dist, done = self.cal_reward(ob[1].copy(),
                                              peg_target,
                                              action)

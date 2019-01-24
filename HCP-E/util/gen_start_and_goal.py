@@ -16,7 +16,7 @@ def main():
                         default='../../xml/simrobot/7dof/robot_mocap.xml',
                         type=str,
                         help='path to robot config')
-    parser.add_argument('--save_dir', default='../../xml/gen_xmls/reacher',
+    parser.add_argument('--save_dir', default='../../xml/gen_xmls/simrobot/reacher',
                         type=str,
                         help='path to save initial joint poses')
     print('Program starts at: \033[92m %s \033[0m' %

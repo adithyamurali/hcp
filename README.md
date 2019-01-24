@@ -58,6 +58,9 @@ cd ../HCP-E
 python main.py --env=peg_insertion --with_kin --train_ratio=0.9 --save_interval=200 --robot_dir=../xml/gen_xmls/simrobot/peg_insertion --save_dir=peg_data/HCP-E
 
 ## HCP-E: reacher
+cd util
+python gen_start_and_goal.py
+cd ..
 python main.py --env=reacher --with_kin --train_ratio=0.9 --save_interval=200 --robot_dir=../xml/gen_xmls/simrobot/reacher --save_dir=reacher_data/HCP-E
 ```
 
